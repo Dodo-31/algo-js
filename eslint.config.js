@@ -1,29 +1,17 @@
-import eslintRecommended from 'eslint/conf/eslint-recommended.js';
-import prettierConfig from 'eslint-config-prettier';
+const eslintRecommended = require('eslint/conf/eslint-recommended.js');
+const prettierConfig = require('eslint-config-prettier');
 
-export default [
+module.exports = [
   {
-    // fichiers ciblés
     files: ['*.js'],
-
-    // options du langage
-    languageOptions: {
-      ecmaVersion: 12, // ES2021
-      sourceType: 'module', // modules ES6
-    },
-
-    // plugins (pas besoin pour l'instant)
+    languageOptions: { ecmaVersion: 12, sourceType: 'module' },
     plugins: {},
-
-    // règles personnalisées
     rules: {
-      'no-var': 'error', // interdit var
-      semi: ['error', 'always'], // point-virgule obligatoire
-      'no-redeclare': 'error', // interdit redéclaration
-      quotes: ['error', 'single'], // guillemets simples
+      'no-var': 'error',
+      semi: ['error', 'always'],
+      'no-redeclare': 'error',
+      quotes: ['error', 'single'],
     },
-
-    // inclure les règles recommandées et désactiver les conflits avec Prettier
     ...eslintRecommended,
     ...prettierConfig,
   },
