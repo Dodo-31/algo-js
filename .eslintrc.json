@@ -9,5 +9,10 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "no-var": "error",
+    "semi": ["error", "always"],
+    "no-redeclare": "error",
+    "quotes": ["error", "single"]
+  }
 }
