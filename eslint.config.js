@@ -1,18 +1,18 @@
-const eslintRecommended = require('eslint/conf/eslint-recommended.js');
-const prettierConfig = require('eslint-config-prettier');
-
+// eslint.config.js
 module.exports = [
   {
-    files: ['*.js'],
-    languageOptions: { ecmaVersion: 12, sourceType: 'module' },
-    plugins: {},
+    files: ['**/*.js'],
+
+    languageOptions: {
+      ecmaVersion: 2020, // compatible Node
+      sourceType: 'script', // important : pour require()
+    },
+
     rules: {
-      'no-var': 'error',
+      'no-var': 'error', // interdit var
       semi: ['error', 'always'],
       'no-redeclare': 'error',
       quotes: ['error', 'single'],
     },
-    ...eslintRecommended,
-    ...prettierConfig,
   },
 ];
