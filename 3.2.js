@@ -5,8 +5,9 @@ let number2 = [100, 101, 102];
 // averageNumber (average = moyenne) : nom de la fonction
 // numbers : paramètre qui recevra n'importe quel tableau
 const averageNumber = (number) => {
-    let sum = 0; // variable dans laquelle on va additionner les valeurs du tableau
 
+    // variable dans laquelle on va additionner les valeurs du tableau
+    let sum = 0; 
     // Parcourt chaque élément du tableau
     for (let num of number) {
         // on ajoute chaque valeur à sum
