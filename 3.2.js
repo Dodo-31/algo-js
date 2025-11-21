@@ -16,6 +16,7 @@ const averageNumber = (number) => {
     // La moyenne = somme totale / (divisé) nombre d'éléments.
     // number.length : donne le nombre d'éléments dans le tableau number(utile pour calculer la moyenne : somme / nombre d'éléments).
 
+    // En gros, returnSum / number.length, ça renvoie à la somme totale divisée par le nombre d'éléments du tableau.
     return sum / number.length;
 };
 
