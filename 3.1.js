@@ -24,7 +24,7 @@ const sumNumber = (number) => {
 
 // Calcul et affichage pour le premier tableau
 
-//console.log:vfonction qui affiche quelque chose dans la console.Tout ce que je met entre les parenthèses va s’afficher.
+//console.log: fonction qui affiche quelque chose dans la console.Tout ce que je met entre les parenthèses va s’afficher.
 
 // template string: Utiliser un template string avec `${...}` est plus pratique que la concaténation classique, car on peut directement insérer des variables ou des expressions dans la chaîne. Sinon, il faudrait écrire "texte" + variable + "texte" + autreVariable + ..., ce qui devient rapidement long et compliqué.
 
