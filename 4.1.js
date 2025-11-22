@@ -1,7 +1,6 @@
 const prompt = require("prompt-sync")();
 
 // declaration de ma fonction flechée qui vas calculer la surface de mon rectangle
-
 const calcSurface = (length, width) => length * width;
 
 // Demande a l'utilisateur d'entrer la longueur et la largeur du rectangle
