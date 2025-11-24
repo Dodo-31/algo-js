@@ -64,5 +64,3 @@ console.log("Tableau généré :", valeur);
 
 
 
-
-
